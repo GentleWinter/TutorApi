@@ -1,0 +1,12 @@
+C:\Users\Winte\source\repos\NewRepo\Tutor\Tutor.Domain\bin\Debug\net7.0\Tutor.Domain.deps.json
+C:\Users\Winte\source\repos\NewRepo\Tutor\Tutor.Domain\bin\Debug\net7.0\Tutor.Domain.dll
+C:\Users\Winte\source\repos\NewRepo\Tutor\Tutor.Domain\bin\Debug\net7.0\Tutor.Domain.pdb
+C:\Users\Winte\source\repos\NewRepo\Tutor\Tutor.Domain\obj\Debug\net7.0\Tutor.Domain.csproj.AssemblyReference.cache
+C:\Users\Winte\source\repos\NewRepo\Tutor\Tutor.Domain\obj\Debug\net7.0\Tutor.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Winte\source\repos\NewRepo\Tutor\Tutor.Domain\obj\Debug\net7.0\Tutor.Domain.AssemblyInfoInputs.cache
+C:\Users\Winte\source\repos\NewRepo\Tutor\Tutor.Domain\obj\Debug\net7.0\Tutor.Domain.AssemblyInfo.cs
+C:\Users\Winte\source\repos\NewRepo\Tutor\Tutor.Domain\obj\Debug\net7.0\Tutor.Domain.csproj.CoreCompileInputs.cache
+C:\Users\Winte\source\repos\NewRepo\Tutor\Tutor.Domain\obj\Debug\net7.0\Tutor.Domain.dll
+C:\Users\Winte\source\repos\NewRepo\Tutor\Tutor.Domain\obj\Debug\net7.0\refint\Tutor.Domain.dll
+C:\Users\Winte\source\repos\NewRepo\Tutor\Tutor.Domain\obj\Debug\net7.0\Tutor.Domain.pdb
+C:\Users\Winte\source\repos\NewRepo\Tutor\Tutor.Domain\obj\Debug\net7.0\ref\Tutor.Domain.dll

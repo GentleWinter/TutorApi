@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v7.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v7.0": {
+      "Tutor.Application/1.0.0": {
+        "dependencies": {
+          "Tutor.Domain": "1.0.0"
+        },
+        "runtime": {
+          "Tutor.Application.dll": {}
+        }
+      },
+      "Tutor.Domain/1.0.0": {
+        "runtime": {
+          "Tutor.Domain.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Tutor.Application/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Tutor.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

@@ -1,0 +1,15 @@
+C:\Users\Winte\source\repos\NewRepo\Tutor\Tutor.Infra\bin\Debug\net7.0\Tutor.Infra.deps.json
+C:\Users\Winte\source\repos\NewRepo\Tutor\Tutor.Infra\bin\Debug\net7.0\Tutor.Infra.dll
+C:\Users\Winte\source\repos\NewRepo\Tutor\Tutor.Infra\bin\Debug\net7.0\Tutor.Infra.pdb
+C:\Users\Winte\source\repos\NewRepo\Tutor\Tutor.Infra\bin\Debug\net7.0\Tutor.Domain.dll
+C:\Users\Winte\source\repos\NewRepo\Tutor\Tutor.Infra\bin\Debug\net7.0\Tutor.Domain.pdb
+C:\Users\Winte\source\repos\NewRepo\Tutor\Tutor.Infra\obj\Debug\net7.0\Tutor.Infra.csproj.AssemblyReference.cache
+C:\Users\Winte\source\repos\NewRepo\Tutor\Tutor.Infra\obj\Debug\net7.0\Tutor.Infra.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Winte\source\repos\NewRepo\Tutor\Tutor.Infra\obj\Debug\net7.0\Tutor.Infra.AssemblyInfoInputs.cache
+C:\Users\Winte\source\repos\NewRepo\Tutor\Tutor.Infra\obj\Debug\net7.0\Tutor.Infra.AssemblyInfo.cs
+C:\Users\Winte\source\repos\NewRepo\Tutor\Tutor.Infra\obj\Debug\net7.0\Tutor.Infra.csproj.CoreCompileInputs.cache
+C:\Users\Winte\source\repos\NewRepo\Tutor\Tutor.Infra\obj\Debug\net7.0\Tutor.Infra.csproj.CopyComplete
+C:\Users\Winte\source\repos\NewRepo\Tutor\Tutor.Infra\obj\Debug\net7.0\Tutor.Infra.dll
+C:\Users\Winte\source\repos\NewRepo\Tutor\Tutor.Infra\obj\Debug\net7.0\refint\Tutor.Infra.dll
+C:\Users\Winte\source\repos\NewRepo\Tutor\Tutor.Infra\obj\Debug\net7.0\Tutor.Infra.pdb
+C:\Users\Winte\source\repos\NewRepo\Tutor\Tutor.Infra\obj\Debug\net7.0\ref\Tutor.Infra.dll
