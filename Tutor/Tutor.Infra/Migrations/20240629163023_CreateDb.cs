@@ -23,6 +23,7 @@ namespace Tutor.Infra.Migrations
                     Email = table.Column<string>(type: "text", nullable: false),
                     Document = table.Column<string>(type: "text", nullable: false),
                     Password = table.Column<string>(type: "text", nullable: false)
+                        .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn)
                 },
                 constraints: table =>
                 {

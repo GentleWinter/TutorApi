@@ -1,5 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
+using Tutor.Application.IoC;
 using Tutor.Infra.Contexts;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -14,13 +15,16 @@ builder.Configuration
     .AddEnvironmentVariables()
     .Build();
 
+builder.Services
+    .AddServices();
+
 builder.Services.AddSwaggerGen(opt =>
 {
     opt.SwaggerDoc("v1", new OpenApiInfo
     {
         Version = "v1",
         Title = "Tutor API",
-        Description = ".NET7 Api to manipulate tutor date"
+        Description = ".NET7 Api to manipulate tutor data"
     });
 
     //var xmlFile = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";

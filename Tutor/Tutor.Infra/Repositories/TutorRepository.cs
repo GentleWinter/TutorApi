@@ -22,6 +22,8 @@ namespace Tutor.Infra.Repositories
             => await _dbSet.AddAsync(tutor);
         public TutorEntity Update(TutorEntity tutor)
             => _dbSet.Update(tutor).Entity;
+        public async Task<TutorEntity?> Get(TutorEntity tutor)
+            => await _dbSet.FindAsync(tutor);
         public void SaveChanges()
             =>_dbContext.SaveChanges();
     }

@@ -8,6 +8,7 @@ namespace Tutor.Infra.Repositories.Interfaces
         Task<TutorEntity?> FirstOrDefault(Expression<Func<TutorEntity, bool>> predicate);
         Task Add(TutorEntity tutor);
         TutorEntity Update(TutorEntity tutor);
+        Task<TutorEntity?> Get(TutorEntity entity);
         void SaveChanges();
     }
 }

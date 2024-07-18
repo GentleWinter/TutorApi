@@ -47,6 +47,7 @@ namespace Tutor.Infra.Migrations
 
                     b.Property<string>("Password")
                         .IsRequired()
+                        .ValueGeneratedOnAdd()
                         .HasColumnType("text");
 
                     b.HasKey("Id");

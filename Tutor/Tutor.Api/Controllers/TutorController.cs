@@ -1,39 +1,59 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using Tutor.Application.Services;
+using Tutor.Application.Services.Interfaces;
 using Tutor.Domain.DTO;
-using Tutor.Domain.Entities;
 
 namespace TutorApi.Controllers
 {
     public class TutorController : Controller
     {
-        public readonly TutorServices _tutorService;
+        private readonly ITutorService _tutorService;
+        public TutorController(ITutorService tutorService)
+        {
+            _tutorService = tutorService;
+        }
 
         [HttpGet]
         [Route("SearchTutor")]
-        public TutorDTO SearchTutor (TutorDTO tutor)
+        public IActionResult SearchTutor (TutorDTO tutor)
         {
             try
             {
-                return _tutorService.SearchTutor(tutor);                                
+                _tutorService.SearchTutor(tutor); 
+                return Ok(tutor);
             }
             catch (Exception ex)
             {
-                throw new Exception("Could not find tutor",ex);
+                return StatusCode(StatusCodes.Status500InternalServerError, $"Could not find tutor: {ex}");
             }
         }
         
         [HttpPost]
         [Route("CreateTutor")]
-        public TutorDTO CreateTutor (TutorEntity tutor)
+        public IActionResult CreateTutor ([FromBody]TutorDTO tutor)
         {
             try
             {
-                return _tutorService.CreateTutor(tutor);                                
+                var returno = _tutorService.CreateTutor(tutor);
+                return Ok(tutor);                        
             }
             catch (Exception ex)
             {
-                throw new Exception("Could not find tutor",ex);
+                return StatusCode(StatusCodes.Status500InternalServerError, $"Could not create tutor: {ex}");
+            }
+        }
+        
+        [HttpPost]
+        [Route("UpdateTutor")]
+        public IActionResult Update ([FromBody]TutorDTO tutor)
+        {
+            try
+            {
+                var returno = _tutorService.UpdateTutor(tutor);
+                return Ok(tutor);                        
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError, $"Could not create tutor: {ex}");
             }
         }
     }

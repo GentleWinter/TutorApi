@@ -1,8 +1,24 @@
 {
   "version": 2,
-  "dgSpecHash": "Kc/6qdKZQBehq7Jpq0UfScxwO+qSfShcUVahNSAB/s8ied0IovAVzFdbuiIKzL+kqzXPw+w/+xkKjwjhl9dyGA==",
+  "dgSpecHash": "+uX3LqXd2C4DqrUPNiPbjN75u0OayecnCLUh+CCmqT+1b5P41uOWE5rXSrWG0fnIV6kR1mnUpKMa1N7iKo3L5w==",
   "success": true,
   "projectFilePath": "C:\\Users\\Winte\\source\\repos\\NewRepo\\Tutor\\Tutor.Application\\Tutor.Application.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\Winte\\.nuget\\packages\\microsoft.entityframeworkcore\\7.0.18\\microsoft.entityframeworkcore.7.0.18.nupkg.sha512",
+    "C:\\Users\\Winte\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\7.0.18\\microsoft.entityframeworkcore.abstractions.7.0.18.nupkg.sha512",
+    "C:\\Users\\Winte\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\7.0.18\\microsoft.entityframeworkcore.analyzers.7.0.18.nupkg.sha512",
+    "C:\\Users\\Winte\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\7.0.18\\microsoft.entityframeworkcore.relational.7.0.18.nupkg.sha512",
+    "C:\\Users\\Winte\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\7.0.0\\microsoft.extensions.caching.abstractions.7.0.0.nupkg.sha512",
+    "C:\\Users\\Winte\\.nuget\\packages\\microsoft.extensions.caching.memory\\7.0.0\\microsoft.extensions.caching.memory.7.0.0.nupkg.sha512",
+    "C:\\Users\\Winte\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\7.0.0\\microsoft.extensions.configuration.abstractions.7.0.0.nupkg.sha512",
+    "C:\\Users\\Winte\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\7.0.0\\microsoft.extensions.dependencyinjection.7.0.0.nupkg.sha512",
+    "C:\\Users\\Winte\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\7.0.0\\microsoft.extensions.dependencyinjection.abstractions.7.0.0.nupkg.sha512",
+    "C:\\Users\\Winte\\.nuget\\packages\\microsoft.extensions.logging\\7.0.0\\microsoft.extensions.logging.7.0.0.nupkg.sha512",
+    "C:\\Users\\Winte\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\7.0.0\\microsoft.extensions.logging.abstractions.7.0.0.nupkg.sha512",
+    "C:\\Users\\Winte\\.nuget\\packages\\microsoft.extensions.options\\7.0.0\\microsoft.extensions.options.7.0.0.nupkg.sha512",
+    "C:\\Users\\Winte\\.nuget\\packages\\microsoft.extensions.primitives\\7.0.0\\microsoft.extensions.primitives.7.0.0.nupkg.sha512",
+    "C:\\Users\\Winte\\.nuget\\packages\\npgsql\\7.0.7\\npgsql.7.0.7.nupkg.sha512",
+    "C:\\Users\\Winte\\.nuget\\packages\\npgsql.entityframeworkcore.postgresql\\7.0.18\\npgsql.entityframeworkcore.postgresql.7.0.18.nupkg.sha512"
+  ],
   "logs": []
 }
