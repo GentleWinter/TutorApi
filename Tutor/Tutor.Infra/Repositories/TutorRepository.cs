@@ -1,5 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using System.Linq.Expressions;
+using Tutor.Domain.DTO;
 using Tutor.Domain.Entities;
 using Tutor.Infra.Contexts;
 using Tutor.Infra.Repositories.Interfaces;
@@ -18,12 +19,14 @@ namespace Tutor.Infra.Repositories
         }
         public async Task<TutorEntity?> FirstOrDefault(Expression<Func<TutorEntity, bool>> predicate)
             => await _dbSet.FirstOrDefaultAsync(predicate);
-        public async Task Add(TutorEntity tutor)
-            => await _dbSet.AddAsync(tutor);
+        public async Task<TutorEntity> Add(TutorEntity tutor)
+        {
+            var result = await _dbSet.AddAsync(tutor);
+
+            return result.Entity;
+        }
         public TutorEntity Update(TutorEntity tutor)
             => _dbSet.Update(tutor).Entity;
-        public async Task<TutorEntity?> Get(TutorEntity tutor)
-            => await _dbSet.FindAsync(tutor);
         public void SaveChanges()
             =>_dbContext.SaveChanges();
     }

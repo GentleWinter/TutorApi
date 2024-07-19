@@ -15,54 +15,59 @@ namespace Tutor.Application.Services
         }
 
 
-        public async Task<TutorDTO> CreateTutor(TutorDTO tutor)
-        {
-            TutorEntity tutorEntity = new TutorEntity()
-            {
-                Name = tutor.Name,
-                Document = tutor.Document,
-                Email = tutor.Email
-            };
-
-            await _tutorRepository.Add(tutorEntity);
-            _tutorRepository.SaveChanges();
-
-            return tutor;
-        }
-
-        public async Task<TutorDTO> SearchTutor(TutorDTO tutor)
-        {
-            TutorEntity tutorEntity = new TutorEntity()
-            {
-                Name = tutor.Name,
-                Document = tutor.Document,
-                Email = tutor.Email
-            };
-
-            var retorno = await _tutorRepository.Get(tutorEntity);
-
-            return new TutorDTO() 
-            {
-                Document = retorno.Document,
-                Email = retorno.Email,
-                Name = retorno.Name
-            };
-        }
-
-        public TutorDTO UpdateTutor(TutorDTO tutor)
+        public async Task<TutorDto> CreateTutor(CreateTutorDto tutor)
         {
             TutorEntity tutorEntity = new TutorEntity()
             {
                 Name = tutor.Name,
                 Document = tutor.Document,
                 Email = tutor.Email,
-                Password = tutor.Password
+                Password = Guid.NewGuid().ToString().Replace("-", "")
+            };
+
+            var tutorNew = await _tutorRepository.Add(tutorEntity);
+            _tutorRepository.SaveChanges();
+
+            return new TutorDto()
+            {
+                Id = tutorNew.Id,
+                Document = tutorNew.Document,
+                Email = tutorNew.Email,
+                Name = tutorNew.Name,
+                Password = tutorNew.Password
+            };
+        }
+
+        public async Task<TutorDto> SearchTutor(SearchTutorDto tutor)
+        { 
+            var tutorEntity = await _tutorRepository.FirstOrDefault(t => t.Document == tutor.Document 
+                                                                     || t.Id == tutor.Id);
+
+            return new TutorDto() 
+            {
+                Id = tutorEntity.Id,
+                Document = tutorEntity.Document,
+                Email = tutorEntity.Email,
+                Name = tutorEntity.Name
+            };
+        }
+
+        public TutorDto UpdateTutor(TutorDto tutor)
+        {
+            var tutorEntity = new TutorEntity()
+            {
+                Id = tutor.Id,
+                Name = tutor.Name,
+                Document = tutor.Document,
+                Email = tutor.Email,
+                Password = tutor.Password,
+                BirthDate = tutor.BirthDate
             };
 
             var retorno = _tutorRepository.Update(tutorEntity);
             _tutorRepository.SaveChanges();
 
-            return new TutorDTO()
+            return new TutorDto()
             {
                 Document = retorno.Document,
                 Email = retorno.Email,

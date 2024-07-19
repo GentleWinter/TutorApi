@@ -4,8 +4,8 @@ namespace Tutor.Application.Services.Interfaces
 {
     public interface ITutorService
     {
-        Task<TutorDTO> SearchTutor(TutorDTO tutorDTO);
-        Task<TutorDTO> CreateTutor(TutorDTO tutorDTO);
-        TutorDTO UpdateTutor(TutorDTO tutorDTO);
+        Task<TutorDto> SearchTutor(SearchTutorDto tutorDTO);
+        Task<TutorDto> CreateTutor(CreateTutorDto tutorDTO);
+        TutorDto UpdateTutor(TutorDto tutorDTO);
     }
 }

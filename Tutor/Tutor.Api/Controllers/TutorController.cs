@@ -14,12 +14,12 @@ namespace TutorApi.Controllers
 
         [HttpGet]
         [Route("SearchTutor")]
-        public IActionResult SearchTutor (TutorDTO tutor)
+        public async Task<IActionResult> SearchTutor([FromQuery]SearchTutorDto tutor)
         {
             try
             {
-                _tutorService.SearchTutor(tutor); 
-                return Ok(tutor);
+                var retorno = await _tutorService.SearchTutor(tutor); 
+                return Ok(retorno);
             }
             catch (Exception ex)
             {
@@ -29,12 +29,12 @@ namespace TutorApi.Controllers
         
         [HttpPost]
         [Route("CreateTutor")]
-        public IActionResult CreateTutor ([FromBody]TutorDTO tutor)
+        public async Task<IActionResult> CreateTutor ([FromBody]CreateTutorDto tutor)
         {
             try
             {
-                var returno = _tutorService.CreateTutor(tutor);
-                return Ok(tutor);                        
+                var retorno = await _tutorService.CreateTutor(tutor);
+                return Ok(retorno);                        
             }
             catch (Exception ex)
             {
@@ -44,7 +44,7 @@ namespace TutorApi.Controllers
         
         [HttpPost]
         [Route("UpdateTutor")]
-        public IActionResult Update ([FromBody]TutorDTO tutor)
+        public IActionResult Update ([FromBody]TutorDto tutor)
         {
             try
             {
@@ -53,7 +53,7 @@ namespace TutorApi.Controllers
             }
             catch (Exception ex)
             {
-                return StatusCode(StatusCodes.Status500InternalServerError, $"Could not create tutor: {ex}");
+                return StatusCode(StatusCodes.Status500InternalServerError, $"Could not update tutor: {ex}");
             }
         }
     }

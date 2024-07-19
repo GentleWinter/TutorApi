@@ -2,6 +2,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
 using Tutor.Application.IoC;
 using Tutor.Infra.Contexts;
+using Tutor.Infra.IoC;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -16,7 +17,8 @@ builder.Configuration
     .Build();
 
 builder.Services
-    .AddServices();
+    .AddServices()
+    .AddInfra(builder.Configuration);
 
 builder.Services.AddSwaggerGen(opt =>
 {
@@ -38,6 +40,7 @@ builder.Services.AddDbContext<TutorContext>(options =>
 });
 
 var app = builder.Build();
+AppContext.SetSwitch("Npgsql.EnableLegacyTimestampBehavior", true);
 
 using (var scope = app.Services.CreateScope())
 {
