@@ -1,6 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using System.Linq.Expressions;
-using Tutor.Domain.DTO;
 using Tutor.Domain.Entities;
 using Tutor.Infra.Contexts;
 using Tutor.Infra.Repositories.Interfaces;
